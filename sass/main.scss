@@ -7,9 +7,12 @@
 @import "./base/utilities";
 @import "./base/typography";
 
-@import "pages/home";
-
 @import "components/buttons";
 @import "components/composition";
+@import "components/feature-box";
+@import "components/card";
+
 @import "layout/header";
 @import "layout/grid";
+
+@import "pages/home";
