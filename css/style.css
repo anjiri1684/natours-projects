@@ -51,27 +51,27 @@ body {
 }
 
 .u-center-text {
-  text-align: center;
+  text-align: center !important;
 }
 
 .u-margin-bottom-small {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem !important;
 }
 
 .u-margin-bottom-medium {
-  margin-bottom: 4rem;
+  margin-bottom: 4rem !important;
 }
 
 .u-margin-bottom-big {
-  margin-bottom: 8rem;
+  margin-bottom: 8rem !important;
 }
 
 .u-margin-top-big {
-  margin-top: 8rem;
+  margin-top: 8rem !important;
 }
 
 .u-margin-top-huge {
-  margin-top: 10rem;
+  margin-top: 10rem !important;
 }
 
 .heading-primary {
@@ -135,7 +135,7 @@ body {
   margin-bottom: 3rem;
 }
 
-.btn:link, .btn:visited {
+.btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   padding: 15px 40px;
@@ -144,6 +144,8 @@ body {
   transition: all 0.2s;
   position: relative;
   font-size: 1.8rem;
+  border: none;
+  cursor: pointer;
 }
 .btn:hover {
   transform: translateY(-0.3rem);
@@ -153,7 +155,8 @@ body {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
 }
-.btn:active {
+.btn:active, .btn:focus {
+  outline: none;
   transform: translateY(-0.1rem);
   box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
 }
